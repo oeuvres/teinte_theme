@@ -27,7 +27,6 @@
 
 @media screen {
     html {
-        line-height: 1.5;
         font-size: 19px;
     }
     .text {
@@ -252,6 +251,7 @@ main::after,
         max-width: 1140px;
     }
     #text {
+        position: relative;
         max-width: 800px;
         background: #fff;
         padding: 3em 4em 3em 4em;

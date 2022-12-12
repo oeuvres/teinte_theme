@@ -652,6 +652,7 @@ samp {
 section {
     display: block;
     clear: both;
+    margin-bottom: 3rem;
 }
 
 small {
@@ -831,6 +832,10 @@ textarea.readonly {
 
 
 /** TEI classes, in TEI element name order */
+
+section.act.verse {
+    width: 27rem;
+}
 
 h1.act,
 h2.act,
@@ -1019,10 +1024,6 @@ h1.collection {
     margin: 2rem 0;
     text-align: right;
     text-indent: 0;
-}
-
-section {
-    padding-top: 3rem;
 }
 
 div.docAuthor {
@@ -1514,11 +1515,10 @@ p.salute {
     margin: 0.5rem 0;
 }
 
-.speaker {
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
+.sp .speaker {
+    margin: 0;
     font-variant: small-caps;
-    text-indent: 3rem;
+    text-align: center;
     font-weight: 250;
 }
 
@@ -1535,7 +1535,7 @@ p.salute {
     font-weight: 300;
 }
 
-*/ .sp .lg {
+.sp .lg {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1574,8 +1574,23 @@ p.salute {
 
 div.stage {
     text-align: justify;
-    font-size: 90%;
+    text-indent: 2rem;
 }
+
+.scene > .stage {
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-indent: 0;
+}
+
+.scene > .stage i,
+.scene > .stage em {
+    font-style: italic;
+}
+
+
 
 .sp.center>.stage {
     hyphens: none;
@@ -1595,8 +1610,6 @@ div.stage.sc {
 }
 
 .sp div.stage {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 div.stage.right {
@@ -1627,22 +1640,20 @@ h6.sub {
     padding-top: 0;
 }
 
-.scene h2,
+.act  h2,
 .scene h3 {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 1rem;
     font-weight: normal;
-    font-style: italic;
     text-align: center;
     hyphens: none;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
+    font-size: 2rem;
 }
 
-h2.verse.scene,
-h3.verse.scene {
-    text-align: left;
-    margin-left: 5rem;
-}
 
 .sourceDesc {}
 
