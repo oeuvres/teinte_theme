@@ -240,6 +240,15 @@ main::after,
     background: #fff;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    #text {
+        max-width: 1000px;
+    }
+
+}
 
 @media (max-width: 1024px) {
     body {
@@ -253,17 +262,6 @@ main::after,
         padding: 3em 2em 3em 2em;
     }
 }
-
-@media (max-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-    #text {
-        max-width: 1000px;
-    }
-
-}
-
 
 @media screen and (min-width: 1024px) {
     #viewport {
