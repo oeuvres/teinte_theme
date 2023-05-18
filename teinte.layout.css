@@ -29,8 +29,6 @@
     #viewport {
         width: 100%;
         position: relative;
-        display: flex;
-        justify-content: center;
         margin-right: auto;
         margin-left: auto;
     }
@@ -236,19 +234,47 @@ main::after,
 
 
 /** wide screens */
+#text {
+    width: 72ex;
+    padding: 3em 4em 3em 4em;
+    background: #fff;
+}
 
-@media screen and (min-width: 1024px) {
-    #facsdiv {
-        left: 1020px;
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 12px;
     }
+    .container {
+        max-width: 1000px;
+    }
+    #text {
+        width: 100%;
+        padding: 3em 2em 3em 2em;
+    }
+}
+
+@media (max-width: 1200px) {
     .container {
         max-width: 1140px;
     }
     #text {
+        max-width: 1000px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    #viewport {
+        display: flex;
+        justify-content: center;
+    }
+    #facsdiv {
+        left: 1020px;
+    }
+    #text {
         position: relative;
-        max-width: 800px;
-        background: #fff;
-        padding: 3em 4em 3em 4em;
         border-bottom: 1px dotted #FFFFFF;
     }
     #sidebar {
