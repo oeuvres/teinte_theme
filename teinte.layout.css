@@ -229,6 +229,45 @@ main::after,
     height: 100%;
 }
 
+/** font sizes */
+@media (min-width: 1800px) {
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1800px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
 
 /** specific wide screen, not for print or phone */
 
