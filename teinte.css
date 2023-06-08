@@ -1058,17 +1058,8 @@ aside .docDate {
     font-size: 92%;
 }
 
-.epigraph p.p,
-.epigraph .l {
-    font-style: italic;
+.epigraph .bibl {
     text-align: right;
-}
-
-.epigraph .bibl {}
-
-.epigraph .p i,
-.epigraph .p em {
-    font-style: normal;
 }
 
 .entry>* {
