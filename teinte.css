@@ -292,6 +292,37 @@ figure:after {
     height: 0;
 }
 
+figure.w25 {
+    width: 25%;
+    float: left;
+    clear: both;
+}
+
+figure.w33 {
+    width: 33%;
+    float: left;
+    clear: both;
+}
+
+figure.w50 {
+    width: 50%;
+    float: left;
+    clear: both;
+}
+
+figure.w75 {
+    width: 75%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
 figure.left {
     float: left;
     margin: 15px 15px 8px 0;
@@ -300,6 +331,7 @@ figure.left {
 figure.right {
     float: right;
     margin: 15px 0 8px 15px;
+    clear: both;
 }
 
 figure img {
@@ -429,6 +461,24 @@ h6 {
 
 header {
     clear: both;
+}
+
+header.center {
+    text-align: center;
+}
+
+header.center h1 {
+    font-weight: normal;
+    border: none;
+}
+
+
+header.center > * {
+    line-height: 1.2em;
+}
+
+header.center .titleresp {
+    font-size: 150%;
 }
 
 hr {
@@ -1804,6 +1854,22 @@ p.p {
 ul,
 ol {
     padding-left: 2rem;
+}
+
+li.label { /* non numerated item */
+    list-style-type:none;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+li.label i {
+    font-weight: bold;
+}
+
+ol > li.label {
+    counter-increment:none;
 }
 
 p.p.no {
