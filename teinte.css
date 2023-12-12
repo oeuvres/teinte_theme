@@ -2196,6 +2196,14 @@ p.question {
     line-height: inherit;
 }
 
+div.question i,
+p.question i,
+div.question em,
+p.question em {
+    font-style: normal;
+}
+
+
 .l.refrain {
     font-style: italic;
 }
