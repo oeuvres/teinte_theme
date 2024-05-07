@@ -522,6 +522,10 @@ li.item {
     margin-bottom: 0.25rem;
 }
 
+li.item > p:first-child {
+    text-indent: 0;
+}
+
 li.item p {
     margin: 0;
 }
