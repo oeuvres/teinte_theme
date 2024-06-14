@@ -113,18 +113,18 @@ menu.tree {
     border-left: 4px #888888 solid;
 }
 
-li a.here {
+.tree li a.here {
     font-weight: bold;
     color: #000;
 }
 
-li.here {
+.tree li.here {
     color: #000;
     background-color: #FFFFFF;
     border-top: 1px #E2DED0 solid;
     border-bottom: 1px #E2DED0 solid;
 }
 
-li.here mark {
+.tree li.here mark {
     background: inherit;
 }
