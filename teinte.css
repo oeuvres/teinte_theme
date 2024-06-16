@@ -845,30 +845,6 @@ input.year {
     width: 3rem;
 }
 
-input::-webkit-input-placeholder {
-    color: #AAA !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-}
-
-input::-moz-placeholder {
-    color: #AAA !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-}
-
-input:-moz-placeholder {
-    color: #AAA !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-}
-
-input:-ms-input-placeholder {
-    color: #AAA !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-}
-
 textarea {
     overflow: auto;
     width: 100%;
