@@ -372,7 +372,7 @@ h4,
 h5,
 h6 {
     clear: both;
-    -webkit-hyphens: none !important;
+    -webkit-hyphens: none;
     adobe-hyphenate: none;
     -moz-hyphens: none;
     hyphens: none;
@@ -677,7 +677,7 @@ pre {
     border-left: 1px dotted #808080;
     padding-left: 10px;
     overflow: auto;
-    overflow-y: hidden !important;
+    overflow-y: hidden;
 }
 
 q {
@@ -766,13 +766,13 @@ input[type="submit"].but,
     cursor: pointer;
     display: inline;
     cursor: pointer;
-    border: 1px solid #AAA !important;
+    border: 1px solid #AAA;
     background-color: #E2DED0;
     padding: 2px 5px 0 5px;
     margin: 1px;
     text-shadow: 1px 1px #FFFFFF;
     white-space: nowrap;
-    text-decoration: none !important;
+    text-decoration: none;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     border-radius: 0.25rem;
@@ -1383,7 +1383,7 @@ div.lg {
     margin: 1px -10rem 1px 1rem;
     border: 1px #C9C6BB solid;
     box-shadow: 10px 0px 10px #E2DED0;
-    padding: 0.1rem 0.5rem !important;
+    padding: 0.1rem 0.5rem;
     background: rgba(255, 255, 255, 0.7);
     z-index: 5;
     position: relative;
@@ -2618,9 +2618,9 @@ div.comment {
 }
 
 dd.code {
-    margin: 0 !important;
-    padding: 0 !important;
-    padding-left: 1rem !important;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
     border-left: 1px dotted #808080;
 }
 
@@ -2770,15 +2770,15 @@ dl.xml dt {
         margin-bottom: 0;
     }
     .pb {
-        position: static !important;
-        background: transparent !important;
-        float: none !important;
-        margin: 0 !important;
+        position: static;
+        background: transparent;
+        float: none;
+        margin: 0;
     }
     section .pb,
     article .pb {
-        float: left !important;
-        line-height: inherit !important;
-        margin-right: 0.5rem !important;
+        float: left;
+        line-height: inherit ;
+        margin-right: 0.5rem;
     }
 }
