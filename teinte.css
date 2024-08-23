@@ -654,6 +654,7 @@ optgroup {
     font-weight: bold;
 }
 
+.footnote p,
 p.p,
 div.p,
 .dialogue li {
@@ -1188,6 +1189,10 @@ hr.footnotes {
     font-variant: normal;
 }
 
+p.formula {
+	text-indent: 2rem;
+}
+
 div.l dfn.gloss {
     display: block;
     position: absolute;
@@ -1482,16 +1487,6 @@ a.noteback {
 .opener {
     margin-bottom: 1rem;
 }
-
-p.p {
-    text-indent: 2rem;
-}
-
-p.p.no {
-    text-indent: 0;
-    margin-top: 1rem;
-}
-
 
 /*
 div.part-Y {text-indent: 3rem;}
@@ -1829,6 +1824,11 @@ a.msDesc {
 
 p.p {
     text-indent: 2rem;
+}
+
+p.p.no {
+    text-indent: 0;
+    margin-top: 1rem;
 }
 
 ul,
