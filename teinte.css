@@ -2144,6 +2144,10 @@ div.ornament {
     text-align: left;
 }
 
+.overline {
+    text-decoration: overline;
+}
+
 .page-break-before {
     page-break-before: always;
     margin-top: 6rem;
