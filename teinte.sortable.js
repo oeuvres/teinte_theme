@@ -216,7 +216,7 @@ var Sortable = {
     // innerText could be very slow (infers CSS visibility)
     text=Sortable.trim(text);
     // num
-    n=parseFloat(text.replace(/,/g, '.').replace(/[  x×/]/g, ''));
+    n=parseFloat(text.replace(/,/g, '.').replace(/[  x×\/]/g, ''));
     // text
     if (isNaN(n)) {
       text=text.toLowerCase().replace(/’/, "'").replace(/^(d'|de |le |les |la |l')/, '').replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ç/g, 'c').replace(/ñ/g, 'n').replace(/[éèêë]/g, 'e').replace(/[áàâä]/g, 'a').replace(/[íìîï]/g, 'i').replace(/úùûü/, 'u').replace(/\W/g, '') ;
@@ -250,10 +250,7 @@ var Sortable = {
     row.className = row.className.replace(/ *(odd|even|mod3|mod5|mod10|\d+) */g, ' ');
     if ((i % 2) == 1) row.className+=" even";
     else if ((i % 2) == 0) row.className+=" odd";
-    if ((i % 5) == 1) row.className+=" mod1";
-    if ((i % 5) == 3) row.className+=" mod3";
-    if ((i % 5) == 0) row.className+=" mod5";
-    if ((i % 10) == 0) row.className+=" mod10";
+    row.className+=" mod"+(i % 10);
     // row.className=row.className.replace(/^\s\s*|\s(?=\s)|\s\s*$/g, ""); // normalize-space, will bug a bit on \n\t
   },
   /**
