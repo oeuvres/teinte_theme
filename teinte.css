@@ -1472,13 +1472,13 @@ a.noteback {
     font-size: 85%;
 }
 
-.num {
+span.num {
     font-family: inherit;
     line-height: 1;
     font-variant: small-caps;
 }
 
-.num sup {
+span.num sup {
     font-variant: normal;
 }
 
