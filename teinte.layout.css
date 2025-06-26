@@ -1,7 +1,4 @@
 :root {
-    /*# Les variables ne fonctionnent pas après minification dans concrete5 */
-    --rubric: #902c20;
-    --border: #F5F5ff;
     --bg: #ffffff;
     --text_low: #808099;
     --serif: "Source Serif 4", serif;
@@ -77,23 +74,6 @@ body {
     min-height: 100%;
 }
 
-#header,
-.milestone,
-small.no,
-.note,
-a.noteref,
-a.noteback,
-.pb,
-#sidebar,
-table.data,
-table.table,
-table.search,
-#toolbar,
-li.witness {
-    font-family: sans-serif;
-    font-weight: 300;
-}
-
 #sidebar {
     font-size: 10pt;
 }
@@ -117,13 +97,6 @@ small.round {
     position: absolute;
     right: 0.5rem;
     background-color: #fff;
-}
-
-h1,
-h2 {}
-
-h1 {
-    border-bottom: 1px solid var(--border);
 }
 
 h2 {
@@ -383,11 +356,7 @@ body.search #center {
     margin-top: 1ex;
 }
 
-#main #toc,
-#article #toc {
-    float: right;
-    position: fixed;
-    width: 200px;
+#toc {
     background-color: #FFFFFF;
 }
 

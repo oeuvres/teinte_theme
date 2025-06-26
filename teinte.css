@@ -3,6 +3,7 @@
 
 /*
  * Part of Teinte https://github.com/oeuvres/teinte
+ * Copyright (c) 2024 frederic.glorieux@fictif.org & Centre Jean Piaget / Université de Genève
  * Copyright (c) 2020 frederic.glorieux@fictif.org
  * Copyright (c) 2013 frederic.glorieux@fictif.org & LABEX OBVIL
  * Copyright (c) 2012 frederic.glorieux@fictif.org
@@ -10,6 +11,12 @@
  * BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  */
 
+:root {
+  --red: #be1622;
+  --border: #ccc;
+  --serif: serif;
+  --sans-serif: sans-serif;
+}
 
 /* Reset CSS */
 
@@ -94,6 +101,7 @@ div.biblverse span.lb::after,
 .mark a.next,
 .unselectable,
 .noselect {
+    font: var(--sans-serif);
     user-select: none;
 }
 
@@ -107,21 +115,10 @@ b.mark:target {
     border-top-left-radius: 0;
 }
 
-.note:target::after,
-.l:target::after,
-.marginnote:target::after {
-    display: inline-block;
-    content: "☞";
-    font-size: 16px;
-    position: absolute;
-    top: 0;
-    left: -16px;
-}
-
 .note:target,
 .marginnote:target,
 .l:target {
-    background-color: #FFFFEE;
+    border: 0.1pt solid var(--border);
 }
 
 article a {
@@ -409,19 +406,14 @@ h3 a,
 h3 a:link,
 h3 a:visited {
     text-decoration: none;
-    border-bottom-color: transparent;
     color: inherit;
-}
-
-h1 a:hover {
-    border-bottom-color: inherit;
 }
 
 h2 {
     clear: both;
     font-size: 130%;
     margin: 1rem 0 1rem 0;
-    padding-top: 1rem;
+    padding: 0.5rem;
     line-height: 1.5;
     text-align: center;
     hyphens: none;
@@ -444,6 +436,10 @@ h6 {
 
 header {
     clear: both;
+}
+
+article > header {
+    margin-bottom: 2rem;
 }
 
 header.center {
@@ -915,7 +911,6 @@ blockquote .bibl {
 .byline {
     text-align: right;
     margin-left: 2rem;
-    margin-top: 2rem;
     text-indent: 0;
 }
 
@@ -1344,6 +1339,7 @@ div.lg {
     margin: 1px 0 1rem 0;
     clear: both;
     position: relative;
+    font: var(--sans-serif);
 }
 
 .note blockquote {
@@ -1384,20 +1380,9 @@ p.note {
     margin-right: 0.5rem;
 }
 
-a.noteref {
-    font-size: 60%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -0.4em;
-}
-
-a.noteref sup {
-    font-size: 100%;
-}
-
-a.noteref,
-a.noteback {
+.noteref,
+.noteback {
+    font: var(--sans-serif);
     text-decoration: none;
     border-bottom: none;
     font-style: normal;
@@ -1406,8 +1391,42 @@ a.noteback {
     /* note sep */
 }
 
-a.noteback {
-    font-size: 85%;
+.noteref {
+    border-radius: 50%;
+    border: 1px solid var(--red);
+    color: var(--red) !important;
+    font-size: 80%;
+    line-height: 100%;
+    vertical-align: baseline;
+    top: unset;
+    padding: 0 0.3ex;
+}
+
+.noteref:hover {
+    color: inherit !important;
+}
+
+.noteref sup {
+    font-size: 100%;
+    vertical-align: baseline;
+    top: 0;
+}
+
+.noteback {
+    padding: 0 0.3ex;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 80%;
+    line-height: 100%;
+    vertical-align: baseline;
+    top: unset;
+}
+
+.noteback:hover {
+    border-color: var(--red);
+    color: var(--red) !important;
 }
 
 span.num {
@@ -1737,6 +1756,7 @@ i .title,
 li.witness {
     list-style: square;
     font-size: 90%;
+    font: var(--sans-serif);
 }
 
 .witness label,
@@ -2341,6 +2361,7 @@ tfoot {
 table.data,
 table.table,
 table.search {
+    font: var(--sans-serif);
     border: 1px solid;
     border-color: #CCCCCC;
     margin-top: 1rem;
@@ -2595,20 +2616,19 @@ dl.xml dt {
 /** specific wide screen, not for print or phone */
 
 @media screen {
-    .footnotes .note {
-        margin: 0 0 0 1.7rem;
-        padding: 0.3rem 0 0.25rem 0.5rem;
-    }
     section>.note {
         margin: 1em 0 1rem 0;
         padding-left: 2rem;
     }
-    a.noteback {
+    .footnotes .note {
+        padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+        margin: 0;
+    }
+    .noteback {
+        display: inline-block;
         position: absolute;
-        display: block;
         text-align: right;
-        width: 1.5rem;
-        margin: 0.2rem 0 0 -2.5rem;
+        margin: 0 0 0 -1.5rem;
     }
     aside.marginnote {
         margin-right: -2.5rem;
