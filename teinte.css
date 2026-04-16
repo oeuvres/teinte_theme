@@ -1385,27 +1385,27 @@ p.note {
 
 .noteref,
 .noteback {
+  font-variant-numeric: lining-nums;
   text-decoration: none;
-  border-bottom: none;
   font-style: normal;
-  font-variant: normal;
-  padding-right: .1em;
-  /* note sep */
-}
-
-.noteref {
   border-radius: 50%;
   border: 1px solid var(--color-accent);
-  color: var(--color-accent) !important;
-  font-size: 0.8rem;
+  color: var(--color-accent);
   line-height: 100%;
-  vertical-align: baseline;
-  top: unset;
+  font-size: 1rem;
   padding: 0 0.3ex;
 }
 
+.noteref {
+}
+
+.noteback {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .noteref:hover {
-  color: inherit !important;
+  color: inherit;
 }
 
 .noteref sup {
@@ -1414,18 +1414,7 @@ p.note {
   top: 0;
 }
 
-.noteback {
-  display: inline-block;
-  vertical-align: baseline;
-  padding: 0 0.3ex;
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  font-size: 80%;
-  line-height: 100%;
-  top: unset;
-}
+
 
 .noteback:hover {
   border-color: var(--color-accent);
@@ -1862,7 +1851,6 @@ blockquote.border {
   padding: 0.5em 1.5em;
 }
 
-div.center,
 p.center,
 blockquote.center>* {
   text-align: center;
@@ -2873,9 +2861,7 @@ dl.xml dt {
   }
 
   .article-flow .body,
-  .chapter-flow .body,
-  .article-flow .footnotes,
-  .chapter-flow .footnotes {
+  .chapter-flow .body {
     columns: 2;
     column-gap: 2em;
     orphans: 3;
